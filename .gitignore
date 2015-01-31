@@ -3,6 +3,7 @@ Vendor
 tmp/cache
 tmp/logs
 composer.phar
+composer.lock
 .idea
 .DS_Store
 nbproject
