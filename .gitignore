@@ -2,3 +2,12 @@ Plugin
 Vendor
 tmp/cache
 tmp/logs
+composer.phar
+.idea
+.DS_Store
+nbproject
+
+/.cache
+.project
+/.settings
+.buildpath
