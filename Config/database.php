@@ -53,28 +53,24 @@
  */
 class DATABASE_CONFIG {
 
-	function __construct(){
-		// SQLite用データベースファイルの格納先
-		// [app_name]/tmp/sqldata/
-		$dir = ROOT.DS.APP_DIR .DS. 'tmp'.DS;
-		$this->default['database'] = $dir. $this->default['database'];
-		$this->test['database'] = $dir. $this->test['database'];
-	}
-
 	public $default = array(
-		'datasource' => 'Database/Sqlite',
+		'datasource' => 'Database/MySQL',
 		'persistent' => false,
 		'host' => 'localhost',
-		'database' => 'cake_db.sqlitedb',
+		'login' => 'root',
+		'password' => ''
+		'database' => 'cake_sample',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
 
 	public $test = array(
-		'datasource' => 'Database/Sqlite',
+		'datasource' => 'Database/MySQL',
 		'persistent' => false,
 		'host' => 'localhost',
-		'database' => 'test_cake_db.sqlitedb',
+		'login' => 'root',
+		'password' => ''
+		'database' => 'cake_sample_test',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
